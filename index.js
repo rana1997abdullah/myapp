@@ -1,7 +1,11 @@
 // Import packages
 const express = require('express')
+const cors = require('cors')
+
+
 // App
-const app = express()
+const app = express();
+app.use(cors());
 app.use('/static', express.static('public'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
