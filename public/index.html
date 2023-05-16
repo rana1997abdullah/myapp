@@ -6,14 +6,14 @@
 <div id="img-div">
     
 </div>
-<form method="post" action="/api/todos">
+<form method="post" action="/todos">
   <input type="number" name="todo[id]">
   <input type="text" name="todo[title]">
   <input type="text" name="todo[status]">
   <input type="submit" value="Submit">
 </form>
 <script >
-fetch('/api/todos', {
+fetch('/todos', {
     method: 'post',
     headers: {
         'Content-Type': 'application/json'
